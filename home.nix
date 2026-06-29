@@ -12,7 +12,7 @@
     keepassxc
     remmina
     vlc
-    htop
+    bottom
     kdePackages.kate
     kdePackages.kcalc
     yt-dlp
