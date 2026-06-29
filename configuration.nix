@@ -68,5 +68,9 @@
     remotePlay.openFirewall = true;
   };
 
+  environment.systemPackages = [
+    pkgs.kdePackages.oxygen
+  ];
+
   system.stateVersion = "26.05";
 }
