@@ -4,7 +4,7 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
-    vim
+    neovim
     wget
     fastfetch
     thunderbird
@@ -12,7 +12,7 @@
     keepassxc
     remmina
     vlc
-    htop
+    bottom
     kdePackages.kate
     kdePackages.kcalc
     yt-dlp

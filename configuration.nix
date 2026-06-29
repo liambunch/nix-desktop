@@ -30,7 +30,7 @@
   };
 
   services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
+  services.displayManager.plasma-login-manager.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
@@ -40,7 +40,7 @@
 
   services.printing.enable = true;
 
-  services.pulseaudio.enable = false;
+#   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
