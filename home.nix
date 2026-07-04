@@ -24,7 +24,7 @@
     enable = true;
 
     signing = {
-      key = "/home/liam/.ssh/id_ed25519.pub";
+      key = "~/.ssh/id_ed25519.pub";
       signByDefault = true;
     };
 
