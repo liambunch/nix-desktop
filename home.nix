@@ -17,5 +17,18 @@
     kdePackages.kcalc
     yt-dlp
     firefox
+    git
   ];
+
+  programs.git = {
+    enable = true;
+    settings = {
+      user = {
+        name = "Liam Bunch";
+        email = "liam@liambunch.com";
+      };
+      init.defaultBranch = "main";
+      pull.rebase = true;
+    };
+  };
 }
