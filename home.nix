@@ -15,6 +15,7 @@
     bottom
     kdePackages.kate
     kdePackages.kcalc
+    kdePackages.kdenlive
     yt-dlp
     firefox
     git
