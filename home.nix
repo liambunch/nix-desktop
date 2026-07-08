@@ -19,6 +19,7 @@
     yt-dlp
     firefox
     git
+    libreoffice
   ];
 
   programs.git = {
