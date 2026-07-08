@@ -20,6 +20,7 @@
     firefox
     git
     libreoffice
+    davinci-resolve
   ];
 
   programs.git = {
