@@ -78,4 +78,11 @@
   ];
 
   system.stateVersion = "26.05";
+
+  services.mullvad-vpn.enable = true;
+
+  services.resolved = {
+    enable = true;
+  };
+
 }

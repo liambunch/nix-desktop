@@ -20,7 +20,7 @@
     firefox
     git
     libreoffice
-    davinci-resolve
+    mullvad-vpn
   ];
 
   programs.git = {
