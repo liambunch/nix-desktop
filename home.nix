@@ -21,6 +21,7 @@
     git
     libreoffice
     mullvad-vpn
+    qbittorrent
   ];
 
   programs.git = {
