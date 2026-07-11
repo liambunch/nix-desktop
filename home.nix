@@ -23,6 +23,7 @@
     mullvad-vpn
     qbittorrent
     mpv
+    nicotine-plus
   ];
 
   programs.git = {
