@@ -24,6 +24,7 @@
     qbittorrent
     mpv
     nicotine-plus
+    telegram-desktop
   ];
 
   programs.git = {
