@@ -4,28 +4,38 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
+    
+    # CLI Tools
     neovim
     wget
     fastfetch
+    bottom
+    git
+    yt-dlp
+
+    # Internet (Browsers, Mail, Messaging, etc)
+    firefox
     thunderbird
     vesktop
-    keepassxc
-    remmina
+    nicotine-plus
+    telegram-desktop
+    qbittorrent
+
+    # Media
     vlc
-    bottom
+    mpv
+
+    # Text
+    libreoffice
+    zed-editor
+
+    # Remote Desktop
+    remmina    
+
+    # KDE
     kdePackages.kate
     kdePackages.kcalc
     kdePackages.kdenlive
-    yt-dlp
-    firefox
-    git
-    libreoffice
-    mullvad-vpn
-    qbittorrent
-    mpv
-    nicotine-plus
-    telegram-desktop
-    zed-editor
   ];
 
   programs.git = {
