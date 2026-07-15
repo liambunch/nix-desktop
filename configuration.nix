@@ -5,18 +5,18 @@
     ./hardware-configuration.nix
   ];
 
+  # Boot
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # Networking
   networking.hostName = "desktop";
   networking.networkmanager.enable = true;
 
+  # Time and Locales
   time.timeZone = "Australia/Sydney";
-
   i18n.defaultLocale = "en_AU.UTF-8";
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_AU.UTF-8";
     LC_IDENTIFICATION = "en_AU.UTF-8";
@@ -29,18 +29,15 @@
     LC_TIME = "en_AU.UTF-8";
   };
 
+  # Services
   services.xserver.enable = true;
   services.displayManager.plasma-login-manager.enable = true;
   services.desktopManager.plasma6.enable = true;
-
   services.xserver.xkb = {
     layout = "au";
     variant = "";
   };
-
   services.printing.enable = true;
-
-#   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -48,41 +45,43 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+  services.mullvad-vpn.enable = true;
+  services.resolved = {
+    enable = true;
+  };
+  services.hardware.openrgb = {
+    enable = true;
+    motherboard = "intel";
+  };
+  services.openssh.enable = true;
+  services.flatpak.enable = true;
 
+  # Users
   users.users."liam" = {
     isNormalUser = true;
     description = "Liam Bunch";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-
-  nixpkgs.config.allowUnfree = true;
-
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
     users.liam = import ./home.nix;
   };
 
+  # System Packages
+  nixpkgs.config.allowUnfree = true;
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
   };
-
   environment.systemPackages = [
     pkgs.kdePackages.oxygen
   ];
 
+  # Nix Config
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
-
   system.stateVersion = "26.05";
-
-  services.mullvad-vpn.enable = true;
-
-  services.resolved = {
-    enable = true;
-  };
-
 }

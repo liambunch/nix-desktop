@@ -25,6 +25,7 @@
     mpv
     nicotine-plus
     telegram-desktop
+    zed-editor
   ];
 
   programs.git = {
