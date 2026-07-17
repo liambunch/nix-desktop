@@ -14,6 +14,7 @@
     yt-dlp
 
     # Internet (Browsers, Mail, Messaging, etc)
+    mullvad-vpn
     firefox
     thunderbird
     vesktop
