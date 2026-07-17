@@ -34,8 +34,6 @@
     remmina    
 
     # KDE
-    kdePackages.kate
-    kdePackages.kcalc
     kdePackages.kdenlive
   ];
 
