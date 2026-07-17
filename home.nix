@@ -30,11 +30,12 @@
     libreoffice
     zed-editor
 
-    # Remote Desktop
-    remmina    
-
     # KDE
     kdePackages.kdenlive
+
+    # Misc
+    remmina
+    bottles
   ];
 
   programs.git = {
