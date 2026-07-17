@@ -30,13 +30,8 @@
   };
 
   # Services
-  services.xserver.enable = true;
-  services.displayManager.plasma-login-manager.enable = true;
-  services.desktopManager.plasma6.enable = true;
-  services.xserver.xkb = {
-    layout = "au";
-    variant = "";
-  };
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
   services.printing.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -74,9 +69,7 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
-  environment.systemPackages = [
-    pkgs.kdePackages.oxygen
-  ];
+  environment.systemPackages = with pkgs; [ ];
 
   # Nix Config
   nix.settings.experimental-features = [
