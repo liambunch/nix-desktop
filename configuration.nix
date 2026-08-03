@@ -76,7 +76,8 @@
     remotePlay.openFirewall = true;
   };
   environment.systemPackages = with pkgs; [ 
-  gnome-tweaks
+    gnome-tweaks
+    gnomeExtensions.appindicator
   ];
 
   # Nix Config
