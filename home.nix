@@ -28,7 +28,7 @@
 
     # Text
     libreoffice
-    zed-editor
+    vscodium
 
     # KDE
     kdePackages.kdenlive
@@ -36,6 +36,7 @@
     # Misc
     remmina
     bottles
+    keepassxc
   ];
 
   programs.git = {

@@ -49,7 +49,13 @@
     motherboard = "intel";
   };
   services.openssh.enable = true;
-  services.flatpak.enable = true;
+  services.flatpak = {
+    enable = true;
+    packages = [
+      "com.usebottles.bottles"
+    ];
+    uninstallUnmanaged = true;
+  };
 
   # Users
   users.users."liam" = {
@@ -69,7 +75,9 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [ 
+  gnome-tweaks
+  ];
 
   # Nix Config
   nix.settings.experimental-features = [

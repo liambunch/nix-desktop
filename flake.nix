@@ -7,9 +7,10 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, nix-flatpak, ... }:
     let
       system = "x86_64-linux";
     in
@@ -18,6 +19,7 @@
         inherit system;
         modules = [
           home-manager.nixosModules.home-manager
+	  nix-flatpak.nixosModules.nix-flatpak
           ./configuration.nix
         ];
       };
