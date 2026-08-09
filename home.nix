@@ -32,6 +32,7 @@
 
     # KDE
     kdePackages.kdenlive
+    kdePackages.ark
 
     # Misc
     remmina
