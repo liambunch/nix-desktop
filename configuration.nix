@@ -58,11 +58,16 @@
     uninstallUnmanaged = true;
   };
 
+  # Virtualisation and Docker
+  virtualisation.docker = {
+    enable = true;
+  };
+
   # Users
   users.users."liam" = {
     isNormalUser = true;
     description = "Liam Bunch";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
   home-manager = {
     useGlobalPkgs = true;
