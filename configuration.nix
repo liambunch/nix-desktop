@@ -9,6 +9,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.swraid.enable = true;
 
   # Networking
   networking.hostName = "desktop";
@@ -75,6 +76,7 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
+
   environment.systemPackages = with pkgs; [ 
     gnome-tweaks
     gnomeExtensions.appindicator
