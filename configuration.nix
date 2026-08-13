@@ -31,8 +31,8 @@
   };
 
   # Services
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  services.displayManager.plasma-login-manager.enable = true;
+  services.desktopManager.plasma6.enable = true;
   services.printing.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -81,12 +81,7 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
-  
-  environment.systemPackages = with pkgs; [ 
-    gnome-tweaks
-    gnomeExtensions.appindicator
-  ];
-  
+
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc
