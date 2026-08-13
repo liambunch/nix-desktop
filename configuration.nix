@@ -82,6 +82,10 @@
     remotePlay.openFirewall = true;
   };
 
+  environment.systemPackages = [
+    pkgs.kdePackages.oxygen
+  ];
+  
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc
