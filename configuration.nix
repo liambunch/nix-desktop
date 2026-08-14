@@ -62,6 +62,7 @@
   virtualisation.docker = {
     enable = true;
   };
+  virtualisation.libvirtd.enable = true;
 
   # Users
   users.users."liam" = {
@@ -82,8 +83,10 @@
     remotePlay.openFirewall = true;
   };
 
-  environment.systemPackages = [
-    pkgs.kdePackages.oxygen
+  environment.systemPackages = with pkgs; [
+    kdePackages.oxygen
+    virt-manager
+    dnsmasq
   ];
   
   programs.nix-ld.enable = true;

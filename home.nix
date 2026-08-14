@@ -63,6 +63,12 @@
     package = pkgs.vscodium;
     profiles.default.extensions = with pkgs.vscode-extensions; [
       anthropic.claude-code
-  ];
-};
+    ];
+  };
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.vanilla-dmz;
+    name = "Vanilla-DMZ";
+  };
 }
