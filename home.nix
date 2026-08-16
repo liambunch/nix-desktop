@@ -31,7 +31,7 @@
 
     # KDE
     kdePackages.kdenlive
-    kdePackages.ark
+    kdePackages.kcalc
 
     # Misc
     remmina
