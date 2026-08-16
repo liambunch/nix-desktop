@@ -89,6 +89,7 @@
     ollama
     virt-manager
     dnsmasq
+    python3
   ];
   
   programs.nix-ld.enable = true;
