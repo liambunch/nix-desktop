@@ -85,6 +85,8 @@
 
   environment.systemPackages = with pkgs; [
     kdePackages.oxygen
+    claude-code
+    ollama
     virt-manager
     dnsmasq
   ];
