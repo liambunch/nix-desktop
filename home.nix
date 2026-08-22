@@ -33,10 +33,14 @@
     kdePackages.kdenlive
     kdePackages.kcalc
 
+    # Password Managers
+    keepassxc
+    bitwarden-desktop
+    bitwarden-cli
+
     # Misc
     remmina
     bottles
-    keepassxc
   ];
 
   programs.git = {
