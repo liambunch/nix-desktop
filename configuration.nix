@@ -91,6 +91,11 @@
     dnsmasq
     python3
   ];
+
+  # Dependency for Bitwarden
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-39.8.10"
+  ];
   
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
