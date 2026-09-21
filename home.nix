@@ -27,6 +27,7 @@
     # Media
     vlc
     mpv
+    gimp
 
     # Text
     libreoffice
