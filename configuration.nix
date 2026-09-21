@@ -54,6 +54,7 @@
     enable = true;
     packages = [
       "com.usebottles.bottles"
+      "com.bitwarden.desktop"
     ];
     uninstallUnmanaged = true;
   };
@@ -93,11 +94,6 @@
     dnsmasq
     python3
     obs-studio
-  ];
-
-  # Dependency for Bitwarden
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-39.8.10"
   ];
   
   programs.nix-ld.enable = true;

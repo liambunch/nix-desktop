@@ -43,8 +43,6 @@
 
     # Password Managers
     keepassxc
-    bitwarden-desktop
-    bitwarden-cli
 
     # Misc
     remmina
