@@ -63,12 +63,14 @@
     enable = true;
   };
   virtualisation.libvirtd.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   # Users
   users.users."liam" = {
     isNormalUser = true;
     description = "Liam Bunch";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "vboxusers" ];
   };
   home-manager = {
     useGlobalPkgs = true;
