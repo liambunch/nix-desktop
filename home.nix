@@ -44,6 +44,7 @@
     # Misc
     remmina
     bottles
+    heroic
   ];
 
   programs.git = {
