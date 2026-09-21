@@ -16,7 +16,12 @@
 
     # Internet (Browsers, Mail, Messaging, etc)
     mullvad-vpn
+    librewolf
+
+    # Planned removal
     firefox
+    # ---
+
     ungoogled-chromium
     thunderbird
     vesktop
