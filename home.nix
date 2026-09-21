@@ -12,6 +12,7 @@
     bottom
     git
     yt-dlp
+    dig
 
     # Internet (Browsers, Mail, Messaging, etc)
     mullvad-vpn
