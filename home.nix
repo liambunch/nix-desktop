@@ -17,6 +17,7 @@
     # Internet (Browsers, Mail, Messaging, etc)
     mullvad-vpn
     firefox
+    ungoogled-chromium
     thunderbird
     vesktop
     nicotine-plus
