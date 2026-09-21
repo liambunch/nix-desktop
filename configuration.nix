@@ -92,6 +92,7 @@
     virt-manager
     dnsmasq
     python3
+    obs-studio
   ];
 
   # Dependency for Bitwarden
